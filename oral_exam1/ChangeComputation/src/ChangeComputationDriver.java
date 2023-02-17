@@ -34,11 +34,12 @@ public class ChangeComputationDriver {
         double pricePaidUSD = (twenty*20 + ten*10 + five*5 + one*1 + quarter*0.25 + dime*0.10 + nickle*0.05 + penny*0.01);
 
         System.out.println("You gave the cashier: "+ pricePaidUSD + " in USD.");
-        double usdToEuro = changeComputation.convertUSDtoEuro(pricePaidUSD); // compute the conversion
+        double usdToEuro = ChangeComputation.convertUSDtoEuro(pricePaidUSD); // compute the conversion
         System.out.println("This comes out to " + usdToEuro + " in Euros");
-        double change = changeComputation.computeChange(euroPrice, usdToEuro);
+        double change = ChangeComputation.computeChange(euroPrice, usdToEuro);
         System.out.println("Your Change is: "+ change + " Euros.");
-
+        System.out.println("Here are your bills: ");
+        System.out.println(ChangeComputation.getBillsBack(change));
     }
 }
 
