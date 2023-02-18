@@ -32,6 +32,7 @@ public class ChangeComputationDriver {
         int penny = scanner.nextInt();
 
         double pricePaidUSD = (twenty*20 + ten*10 + five*5 + one*1 + quarter*0.25 + dime*0.10 + nickle*0.05 + penny*0.01);
+        pricePaidUSD = Math.round(pricePaidUSD * 100.0) / 100.0;
 
         System.out.println("You gave the cashier: "+ pricePaidUSD + " in USD.");
         double usdToEuro = ChangeComputation.convertUSDtoEuro(pricePaidUSD); // compute the conversion
