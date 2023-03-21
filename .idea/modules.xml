@@ -519,7 +519,6 @@
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/appK/figK_10/figK_101.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/appK/figK_10/figK_101.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/ch36/ExamplesShowingErrors/CircularDependency/src/module1/module1.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/ch36/ExamplesShowingErrors/CircularDependency/src/module1/module1.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/ch36/ExamplesShowingErrors/CircularDependency/src/module2/module2.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/ch36/ExamplesShowingErrors/CircularDependency/src/module2/module2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test.iml" filepath="$PROJECT_DIR$/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_10th_edition/textbook_examples_10th_edition.iml" filepath="$PROJECT_DIR$/textbook_examples_10th_edition/textbook_examples_10th_edition.iml" />
     </modules>
   </component>
