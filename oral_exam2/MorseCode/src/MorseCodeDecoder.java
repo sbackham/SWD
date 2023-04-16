@@ -12,85 +12,89 @@ public class MorseCodeDecoder {
             String[] word = i.split(" ");
             ArrayList<String> decodedWord = new ArrayList<String>();
             for (String j : word){
-                if (Objects.equals(j, ".- ")) { //converting all letters from bases that use them
-                    j = "A";
+                String engLetter = "";
+                if (Objects.equals(j, ".-")) { //converting all letters from bases that use them
+                    engLetter = "A";
                 }
-                if (Objects.equals(j, "-... ")) {
-                    j = "B";
+                if (Objects.equals(j, "-...")) {
+                    engLetter = "B";
                 }
-                if (Objects.equals(j, "-.-. ")) {
-                    j = "C";
+                if (Objects.equals(j, "-.-.")) {
+                    engLetter = "C";
                 }
-                if (Objects.equals(j, "-.. ")) {
-                    j = "D";
+                if (Objects.equals(j, "-..")) {
+                    engLetter = "D";
                 }
-                if (Objects.equals(j, ". ")) {
-                    j = "E";
+                if (Objects.equals(j, ".")) {
+                    engLetter = "E";
                 }
-                if (Objects.equals(j, "..-. ")) {
-                    j = "F";
+                if (Objects.equals(j, "..-.")) {
+                    engLetter = "F";
                 }
-                if (Objects.equals(j, "--. ")) {
-                    j = "G";
+                if (Objects.equals(j, "--.")) {
+                    engLetter = "G";
                 }
-                if (Objects.equals(j, ".... ")) {
-                    j = "H";
+                if (Objects.equals(j, "....")) {
+                    engLetter = "H";
                 }
-                if (Objects.equals(j, ".. ")) {
-                    j = "I";
+                if (Objects.equals(j, "..")) {
+                    engLetter = "I";
                 }
-                if (Objects.equals(j, ".--- ")) {
-                    j = "J";
+                if (Objects.equals(j, ".---")) {
+                    engLetter = "J";
                 }
-                if (Objects.equals(j, "-.- ")) {
-                    j = "K";
+                if (Objects.equals(j, "-.-")) {
+                    engLetter = "K";
                 }
-                if (Objects.equals(j, ".-.. ")) {
-                    j = "L";
+                if (Objects.equals(j, ".-..")) {
+                    engLetter = "L";
                 }
-                if (Objects.equals(j, "-- ")) {
-                    j = "M";
+                if (Objects.equals(j, "--")) {
+                    engLetter = "M";
                 }
-                if (Objects.equals(j, "-. ")) {
-                    j = "N";
+                if (Objects.equals(j, "-.")) {
+                    engLetter = "N";
                 }
-                if (Objects.equals(j, "--- ")) {
-                    j = "O";
+                if (Objects.equals(j, "---")) {
+                    engLetter = "O";
                 }
-                if (Objects.equals(j, ".--. ")) {
-                    j = "P";
+                if (Objects.equals(j, ".--.")) {
+                    engLetter = "P";
                 }
-                if (Objects.equals(j, "--.- ")) {
-                    j = "Q";
+                if (Objects.equals(j, "--.-")) {
+                    engLetter = "Q";
                 }
-                if (Objects.equals(j, ".-. ")) {
-                    j = "R";
+                if (Objects.equals(j, ".-.")) {
+                    engLetter = "R";
                 }
-                if (Objects.equals(j, "... ")) {
-                    j = "S";
+                if (Objects.equals(j, "...")) {
+                    engLetter = "S";
                 }
-                if (Objects.equals(j, "- ")) {
-                    j = "T";
+                if (Objects.equals(j, "-")) {
+                    engLetter = "T";
                 }
-                if (Objects.equals(j, "..- ")) {
-                    j = "U";
+                if (Objects.equals(j, "..-")) {
+                    engLetter = "U";
                 }
-                if (Objects.equals(j, "...- ")) {
-                    j = "V";
+                if (Objects.equals(j, "...-")) {
+                    engLetter = "V";
                 }
-                if (Objects.equals(j, ".-- ")) {
-                    j = "W";
+                if (Objects.equals(j, ".--")) {
+                    engLetter = "W";
                 }
-                if (Objects.equals(j, "-..- ")) {
-                    j = "X";
+                if (Objects.equals(j, "-..-")) {
+                    engLetter = "X";
                 }
-                if (Objects.equals(j, "-.-- ")) {
-                    j = "Y";
+                if (Objects.equals(j, "-.--")) {
+                    engLetter = "Y";
                 }
-                if (Objects.equals(j, "--.. ")) {
-                    j = "Z";
+                if (Objects.equals(j, "--..")) {
+                    engLetter = "Z";
                 }
-                decodedWord.add(j);
+                if (Objects.equals(j, "   ")) {
+                    engLetter = " ";
+                }
+                decodedWord.add(engLetter);
             }
             for (String k : decodedWord){
                 English.add(k);
