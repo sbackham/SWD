@@ -193,9 +193,13 @@ public class MorseCodeDecoder {
                 if (Objects.equals(J, "Z")) {
                     newLetter = "--.. ";
                 }
+                if (Objects.equals(J, " ")) {
+                    newLetter = "   ";
+                    i++;
+                }
                 encodedWord.add(newLetter); //add each letter to create a new encoded word
             }
-            String space = "   ";
+            String space = "  ";
             encodedWord.add(space);
             Morse = Morse + encodedWord;
         }
