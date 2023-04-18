@@ -110,7 +110,9 @@
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/ch07/GUIGraphicsCaseStudy07/GUIGraphicsCaseStudy07.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/ch07/GUIGraphicsCaseStudy07/GUIGraphicsCaseStudy07.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/ch08/GUIGraphicsCaseStudy08/GUIGraphicsCaseStudy08.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/ch08/GUIGraphicsCaseStudy08/GUIGraphicsCaseStudy08.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/ch37/MatcherMethods/MatcherMethods.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/ch37/MatcherMethods/MatcherMethods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oral_exam2/MorseCode/MorseCode.iml" filepath="$PROJECT_DIR$/oral_exam2/MorseCode/MorseCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/ch22/PolyShapes/PolyShapes.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/ch22/PolyShapes/PolyShapes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oral_exam2/Scoreboard/Scoreboard.iml" filepath="$PROJECT_DIR$/oral_exam2/Scoreboard/Scoreboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_10th_edition/ch15/SerializationApps/SerializationApps.iml" filepath="$PROJECT_DIR$/textbook_examples_10th_edition/ch15/SerializationApps/SerializationApps.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/ch15/SerializationApps/SerializationApps1.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/ch15/SerializationApps/SerializationApps1.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/ch37/StreamMethods/StreamMethods.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/ch37/StreamMethods/StreamMethods.iml" />
@@ -519,6 +521,7 @@
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/appK/figK_10/figK_101.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/appK/figK_10/figK_101.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/ch36/ExamplesShowingErrors/CircularDependency/src/module1/module1.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/ch36/ExamplesShowingErrors/CircularDependency/src/module1/module1.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_11th_edition/ch36/ExamplesShowingErrors/CircularDependency/src/module2/module2.iml" filepath="$PROJECT_DIR$/textbook_examples_11th_edition/ch36/ExamplesShowingErrors/CircularDependency/src/module2/module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oral_exam2/oral_exam2.iml" filepath="$PROJECT_DIR$/oral_exam2/oral_exam2.iml" />
       <module fileurl="file://$PROJECT_DIR$/textbook_examples_10th_edition/textbook_examples_10th_edition.iml" filepath="$PROJECT_DIR$/textbook_examples_10th_edition/textbook_examples_10th_edition.iml" />
     </modules>
   </component>
