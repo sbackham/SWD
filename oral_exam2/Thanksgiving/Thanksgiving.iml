@@ -7,6 +7,5 @@
     </content>
     <orderEntry type="jdk" jdkName="14-ea" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="junit.jupiter" level="project" />
   </component>
 </module>

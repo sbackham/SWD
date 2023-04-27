@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0420d293-73f4-472b-b639-9f98c348c943" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChangeComputation.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../oral_exam2/.idea/libraries/junit_jupiter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../oral_exam2/MorseCode/src/MorseCodeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/GameTrackers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Scoring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../oral_exam2/Thanksgiving/Thanksgiving.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../oral_exam2/Thanksgiving/src/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../oral_exam2/Thanksgiving/src/ThanksgivingDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../oral_exam2/Thanksgiving/src/ThanksgivingOptimizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/ClockGUI/ClockGUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/HangmanGUI/HangmanGUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/ClockGUI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/HangmanGUI/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/ClockGUI/src/main/java/Clock.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/HangmanGUI/src/main/java/Clock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/ClockGUI/src/main/java/ClockDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/HangmanGUI/src/main/java/ClockDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/ClockGUI/src/main/java/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/HangmanGUI/src/main/java/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/ClockGUI/src/main/java/com/example/clockgui/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/HangmanGUI/src/main/java/com/example/clockgui/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/ClockGUI/src/main/java/com/example/clockgui/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/HangmanGUI/src/main/java/com/example/clockgui/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/ClockGUI/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/HangmanGUI/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/ClockGUI/src/main/resources/com/example/clockgui/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/HangmanGUI/src/main/resources/com/example/clockgui/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/MorseCode/MorseCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/MorseCode/MorseCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Basketball.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Basketball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Football.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Football.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Hockey.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Hockey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/ScoreboardDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/ScoreboardDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Soccer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Soccer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../oral_exam2/Scoreboard/src/Sport.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

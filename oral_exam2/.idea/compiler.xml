@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ClockGUI" />
+        <module name="HangmanGUI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ClockGUI" target="17" />
+      <module name="HangmanGUI" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

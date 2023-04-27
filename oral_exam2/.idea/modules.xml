@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ClockGUI/ClockGUI.iml" filepath="$PROJECT_DIR$/ClockGUI/ClockGUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClockGUI/HangmanGUI.iml" filepath="$PROJECT_DIR$/ClockGUI/HangmanGUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/MorseCode/MorseCode.iml" filepath="$PROJECT_DIR$/MorseCode/MorseCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Scoreboard/Scoreboard.iml" filepath="$PROJECT_DIR$/Scoreboard/Scoreboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thanksgiving/Thanksgiving.iml" filepath="$PROJECT_DIR$/Thanksgiving/Thanksgiving.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/oral_exam2.iml" filepath="$PROJECT_DIR$/.idea/oral_exam2.iml" />
     </modules>
   </component>

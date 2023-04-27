@@ -1,4 +1,5 @@
-public class Game {
-    //game stats such as teams, scores, game length, is it over yet?, who won?
-    //getters and setters live here
+public class Game extends GameTrackers{
+    Game(String newHome, String newAway) {
+        super(newHome, newAway);
+    }
 }

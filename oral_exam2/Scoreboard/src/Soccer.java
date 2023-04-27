@@ -1,6 +1,5 @@
-public class Soccer {
-    /*
-    soccer game consists of two halves
-    scoring is goal (1)
-     */
+public class Soccer extends Game{
+    public Soccer(String newHomeTeam, String newAwayTeam) {
+        super(newHomeTeam, newAwayTeam);
+    }
 }

@@ -1,7 +1,5 @@
-public class Hockey {
-    /*
-    hockey has 3 "frames" which are the game periods
-    hockey scoring is simply a goal (1)
-
-     */
+public class Hockey extends Game{
+    public Hockey(String newHomeTeam, String newAwayTeam) {
+        super(newHomeTeam, newAwayTeam);
+    }
 }

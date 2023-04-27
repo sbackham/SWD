@@ -1,36 +1,42 @@
 import java.util.Scanner;
 
 public class ScoreboardDriver {
+    String scoringTeam = "";
+    static Game game = null;
+    String newHomeTeam, newAwayTeam;
+
     public static void main (String[] args){
-        String sport = "";
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Welcome to the Scoreboard tracker! \n" +
+                "Please select which sport you will be tracking by entering the corresponding digit \n" +
+                "(1): Football \n" +
+                "(2): Basketball \n" +
+                "(3): Hockey \n" +
+                "(4): Soccer \n");
+        int sport = scanner.nextInt();
 
-        System.out.println("What is the home team?: ");
-        String homeTeam = scanner.next();
+        System.out.println("Enter the home team name: ");
+        String newHomeTeam = scanner.next();
 
-        System.out.println("What is the away team?: ");
-        String awayTeam = scanner.next();
+        System.out.println("Enter the away team name: ");
+        String newAwayTeam = scanner.next();
 
-        System.out.println("What sport are we playing? " +
-                "Choose from the list:" +
-                "1. Football" +
-                "2. Soccer" +
-                "3. Basketball" +
-                "4. Hockey" +
-                "Enter the digit only to select");
-        int choice = scanner.nextInt();
-        if (choice == 1){
-            sport = "Football";
+        if (sport == 1) {
+            game = new Football(newHomeTeam, newAwayTeam);
         }
-        if (choice == 2){
-            sport = "Soccer";
+        if (sport == 2) {
+            game = new Basketball(newHomeTeam, newAwayTeam);
         }
-        if (choice ==3){
-            sport = "Basketball";
+        if (sport == 3) {
+            game = new Hockey(newHomeTeam, newAwayTeam);
         }
-        if (choice == 4){
-            sport = "Hockey";
+        if (sport == 4) {
+            game = new Soccer(newHomeTeam, newAwayTeam);
         }
+        System.out.println("Current Score: \n" + //display current scores
+                game.getHomeTeam()+ ":" + game.getHomeScore()+ " " +
+                game.getAwayTeam()+ ":" + game.getAwayScore()+ " " +
+                "\n" +
+                "Current "+ game.getPeriodName()+ ": " + game.getCurrentPeriod()); // "current half, current quarter"
     }
-
 }
