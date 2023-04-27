@@ -102,7 +102,6 @@ public class ThanksgivingDriver {
         // printing the elements
         for (Food str : sortFood) { //this is sorted by highest E per W ratio
             sortedFood.add(str);
-            System.out.println(str);
         }
         for(int i =0; i<sortedFood.size(); i++){
             String currentFood = sortedFood.get(i).toString();
