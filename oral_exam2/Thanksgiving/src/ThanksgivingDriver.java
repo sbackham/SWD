@@ -1,8 +1,9 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
+
+import static java.util.Collections.sort;
 
 public class ThanksgivingDriver {
-    public void main (String[] args){
+    public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
         String turkey = "turkey";
         String pie = "pie";
@@ -11,6 +12,17 @@ public class ThanksgivingDriver {
         String stuffing = "stuffing";
         String cranberries = "cranberries";
         String casserole = "casserole";
+        ArrayList<Food> sortFood = new ArrayList();
+        ArrayList sortedFood = new ArrayList();
+        int turkeyCount = 0;
+        int pieCount =0;
+        int potatoesCount=0;
+        int gravyCount=0;
+        int stuffingCount=0;
+        int cranberriesCount=0;
+        int casseroleCount=0;
+        int totalEnjoyment =0;
+
 
         System.out.println("Welcome to the Thanksgiving Dinner Optimizer \n" +
                 "For dinner we are having turkey, pie, potatoes, gravy, stuffing, cranberries, and casserole \n" +
@@ -63,8 +75,98 @@ public class ThanksgivingDriver {
         int casseroleEnjoyment = scanner.nextInt();
         Food Casserole = new Food(casserole, casseroleWeight, casseroleEnjoyment);
 
-        int TurkeyRate = Turkey.EnjoymentPerWeight(Turkey);
-        System.out.println(TurkeyRate);
+        System.out.println("Enter stomach capacity: ");
+        int stomachCapacity = scanner.nextInt();
+
+        double TurkeyRate = Food.EnjoymentPerWeight(Turkey);
+        double PieRate = Food.EnjoymentPerWeight(Pie);
+        double PotatoesRate = Food.EnjoymentPerWeight(Potatoes);
+        double GravyRate = Food.EnjoymentPerWeight(Gravy);
+        double StuffingRate = Food.EnjoymentPerWeight(Stuffing);
+        double CranberriesRate = Food.EnjoymentPerWeight(Cranberries);
+        double CasseroleRate = Food.EnjoymentPerWeight(Casserole);
+
+        sortFood.add(Turkey);
+        sortFood.add(Pie);
+        sortFood.add(Potatoes);
+        sortFood.add(Gravy);
+        sortFood.add(Stuffing);
+        sortFood.add(Cranberries);
+        sortFood.add(Casserole);
+
+
+        //Arrays.toString(sortFood);
+        Collections.sort(sortFood, Food.foodComparator);
+
+        // Iterating over list via for each and
+        // printing the elements
+        for (Food str : sortFood) { //this is sorted by highest E per W ratio
+            sortedFood.add(str);
+            System.out.println(str);
+        }
+        for(int i =0; i<sortedFood.size(); i++){
+            String currentFood = sortedFood.get(i).toString();
+            while (stomachCapacity > 0){
+                if(currentFood.equals("turkey")){
+                      while(stomachCapacity >=turkeyWeight){
+                          stomachCapacity = (int) (stomachCapacity - turkeyWeight);
+                          turkeyCount = turkeyCount+1;
+                          totalEnjoyment= (int) (totalEnjoyment + turkeyEnjoyment);
+                      }
+                }
+                if(currentFood.equals("pie")){
+                    while(stomachCapacity>=pieWeight){
+                        stomachCapacity = (int) (stomachCapacity - pieWeight);
+                        pieCount = pieCount+1;
+                        totalEnjoyment= (int) (totalEnjoyment + pieEnjoyment);
+                    }
+                }
+                if(currentFood.equals("potatoes")){
+                    while(stomachCapacity>=potatoesWeight){
+                        stomachCapacity = (int) (stomachCapacity - potatoesWeight);
+                        potatoesCount = potatoesCount+1;
+                        totalEnjoyment= (int) (totalEnjoyment + potatoesEnjoyment);
+                    }
+                }
+                if(currentFood.equals("gravy")){
+                    while(stomachCapacity>=gravyWeight){
+                        stomachCapacity = (int) (stomachCapacity -gravyWeight);
+                        gravyCount = gravyCount+1;
+                        totalEnjoyment= (int) (totalEnjoyment + gravyEnjoyment);
+                    }
+                }
+                if(currentFood.equals("stuffing")){
+                    while(stomachCapacity>=stuffingWeight){
+                        stomachCapacity = (int) (stomachCapacity - stuffingWeight);
+                        stuffingCount = stuffingCount+1;
+                        totalEnjoyment= (int) (totalEnjoyment + stuffingEnjoyment);
+                    }
+                }
+                if(currentFood.equals("cranberries")){
+                    while(stomachCapacity>=cranberriesWeight){
+                        stomachCapacity = (stomachCapacity - cranberriesWeight);
+                        cranberriesCount = cranberriesCount+1;
+                        totalEnjoyment= (totalEnjoyment + cranberriesEnjoyment);
+                    }
+                }
+                if(currentFood.equals("casserole")){
+                    while(stomachCapacity>=casseroleWeight){
+                        stomachCapacity = (stomachCapacity - casseroleWeight);
+                        casseroleCount = casseroleCount+1;
+                        totalEnjoyment=  (totalEnjoyment + casseroleEnjoyment);
+                    }
+                }
+            }
+        }
+        System.out.println("Turkey: " + turkeyCount);
+        System.out.println("Pie: " + pieCount);
+        System.out.println("Potatoes: " + potatoesCount);
+        System.out.println("Gravy: " + gravyCount);
+        System.out.println("Stuffing: " + stuffingCount);
+        System.out.println("Cranberries: " + cranberriesCount);
+        System.out.println("Casserole: " + casseroleCount);
+        System.out.println("Total Enjoyment: " + totalEnjoyment);
 
     }
-}
+ };
+
