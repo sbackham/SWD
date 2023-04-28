@@ -1,14 +1,23 @@
 import java.util.ArrayList;
 import java.util.Objects;
 
+/**
+ * MorseCodeDecoder holds the encoder and decoder for english and morse
+ */
 public class MorseCodeDecoder {
+
+    /**
+     * Morse to english parses a String for each morse word, then morse letter and translates by letter
+     */
     public static String MorseToEnglish(String morse) {//change from morse code to english letters
         String english = " ";
         ArrayList<String> English = new ArrayList<String>();
-        String newLetter = " ";
         String[] splitMorse = morse.split("   "); // since 3 spaces occur after each word, we split each word up
 
-        for (String i : splitMorse) {// traverse the array of words to parse each letter, then connect each letter in english as a word
+        /**
+         * traverse the array of words to parse each letter, then connect each letter in english as a word
+         */
+        for (String i : splitMorse) {
             String[] word = i.split(" ");
             ArrayList<String> decodedWord = new ArrayList<String>();
             for (String j : word){
@@ -94,29 +103,43 @@ public class MorseCodeDecoder {
                 if (Objects.equals(j, "   ")) {
                     engLetter = " ";
                 }
+                /**
+                 * each letter is added to the Arraylist until the last letter of the word
+                 */
                 decodedWord.add(engLetter);
             }
-            for (String k : decodedWord){
+            for (String k : decodedWord){ //not sure why i put it in a new arraylist but im afraid to take it out lol
                 English.add(k);
             }
         }
+        /**
+         * traverse the arraylist and add to a string since output should be string. this couldve been done another way
+         */
         for (int i=0; i<English.size(); i++ ){
             english = english + English.get(i);
         }
         return english;
 
     }
-
+    /**
+     * Takes each english letter in a word and translates it with its Morse symbols
+     */
     public static String EnglishToMorse(String english) { // change english to morse string
-        english = english.toUpperCase();
+        english = english.toUpperCase(); //just for consistency
         String Morse = "";
         String newLetter = "";
         String[] splitEnglish = english.split(" "); // splits the original string of english into an array of words
         ArrayList<String> encodedWord = new ArrayList<String>();
 
+        /**
+         * traverse the array of words
+         */
         for (int i =0; i < splitEnglish.length; i++) {//
             ArrayList<String> word = new ArrayList<String>();
             word.add(splitEnglish[i]);
+            /**
+             * .equals for comparing strings
+             */
             for (int j =0; j < english.length(); j++){ // traverse for each letter in a word
                 String J = String.valueOf(english.charAt(j));
                 if (Objects.equals(J, "A")) { //converting all letters from bases that use them
