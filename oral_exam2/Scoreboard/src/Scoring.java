@@ -1,15 +1,29 @@
-/*
-all methods are included in GameTrackers.java except for scoring, which is dependent on the sport
+/**
+ * Scoring class
  */
 
-public class Scoring {
+public class Scoring{
+
+    private final String method;
     private final int points;
 
-    Scoring(int addPoints) {
-        points = addPoints;
+    /**
+     * constructor for a score, parameters what the method is and how many pts it is worth
+     */
+    public Scoring(String method, int point) {
+        this.method = method;
+        this.points = point;
     }
-    public int addedPoints() {
+    /**
+     * getter for method
+     */
+    public String getMethod(){
+        return method;
+    }
+    /**
+     * gets added points per method
+     */
+    public int addedPoints(){
         return points;
     }
 }
-

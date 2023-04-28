@@ -1,7 +1,8 @@
 import java.util.*;
 
-import static java.util.Collections.sort;
-
+/**
+ * Driver Application that prompts the user for inputs for each given food item
+ */
 public class ThanksgivingDriver {
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
@@ -78,14 +79,6 @@ public class ThanksgivingDriver {
         System.out.println("Enter stomach capacity: ");
         int stomachCapacity = scanner.nextInt();
 
-        double TurkeyRate = Food.EnjoymentPerWeight(Turkey);
-        double PieRate = Food.EnjoymentPerWeight(Pie);
-        double PotatoesRate = Food.EnjoymentPerWeight(Potatoes);
-        double GravyRate = Food.EnjoymentPerWeight(Gravy);
-        double StuffingRate = Food.EnjoymentPerWeight(Stuffing);
-        double CranberriesRate = Food.EnjoymentPerWeight(Cranberries);
-        double CasseroleRate = Food.EnjoymentPerWeight(Casserole);
-
         sortFood.add(Turkey);
         sortFood.add(Pie);
         sortFood.add(Potatoes);
@@ -98,9 +91,10 @@ public class ThanksgivingDriver {
         //Arrays.toString(sortFood);
         Collections.sort(sortFood, Food.foodComparator);
 
-        // Iterating over list via for each and
-        // printing the elements
-        for (Food str : sortFood) { //this is sorted by highest E per W ratio
+        /**
+         * sorts food by the highest Enjoyment per Weight ratio
+         */
+        for (Food str : sortFood) {
             sortedFood.add(str);
         }
         for(int i =0; i<sortedFood.size(); i++){
