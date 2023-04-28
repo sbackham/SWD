@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.LinkedList;
 
 public class ScoreboardDriver {
     public static void main(String[] args) {
