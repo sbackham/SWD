@@ -1,5 +1,6 @@
-//Food class exists to be able to create objects of type "Food" with names such as turkey, pie, potatoes, with attributes weight and enjoyment
-
+/**
+ * Food class exists to be able to create objects of type "Food" with names such as turkey, pie, potatoes, with attributes weight and enjoyment
+ */
 public class Food {
     String foodName;
     double foodWeight;

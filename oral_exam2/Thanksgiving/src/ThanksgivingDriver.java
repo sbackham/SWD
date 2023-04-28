@@ -30,6 +30,9 @@ public class ThanksgivingDriver {
                 "Please enter the weight of turkey: ");
         int turkeyWeight = scanner.nextInt();
 
+        /**
+         * Takes user inputs for the number for weight and enjoyment
+         */
         System.out.println("Please enter the enjoyment units of turkey: ");
         int turkeyEnjoyment = scanner.nextInt();
         Food Turkey = new Food(turkey, turkeyWeight, turkeyEnjoyment);
@@ -79,6 +82,9 @@ public class ThanksgivingDriver {
         System.out.println("Enter stomach capacity: ");
         int stomachCapacity = scanner.nextInt();
 
+        /**
+         * An arraylist that holds the list of foods with their attributes
+         */
         sortFood.add(Turkey);
         sortFood.add(Pie);
         sortFood.add(Potatoes);
@@ -88,8 +94,10 @@ public class ThanksgivingDriver {
         sortFood.add(Casserole);
 
 
-        //Arrays.toString(sortFood);
-        Collections.sort(sortFood, Food.foodComparator);
+        /**
+         * sorts food by the highest Enjoyment per Weight ratio
+         */
+        //Collections.sort(sortFood, Food.foodComparator);
 
         /**
          * sorts food by the highest Enjoyment per Weight ratio
@@ -97,6 +105,11 @@ public class ThanksgivingDriver {
         for (Food str : sortFood) {
             sortedFood.add(str);
         }
+
+        /**
+         * this loop takes stomach capacity while it is not 0 and subtracts the weight of each food starting at the one
+         * with the greatest ratio
+         */
         for(int i =0; i<sortedFood.size(); i++){
             String currentFood = sortedFood.get(i).toString();
             while (stomachCapacity > 0){
@@ -151,6 +164,9 @@ public class ThanksgivingDriver {
                 }
             }
         }
+        /**
+         * returns the count for each food and the total enjoyment
+         */
         System.out.println("Turkey: " + turkeyCount);
         System.out.println("Pie: " + pieCount);
         System.out.println("Potatoes: " + potatoesCount);
